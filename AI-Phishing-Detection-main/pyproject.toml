@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phishguard-env"
+version = "1.0.0"
+description = "A SOC Analyst simulation environment for phishing triage."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Arin Kulkarni" }
+]
+dependencies = [
+    "openenv",
+    "pydantic",
+    "fastapi",
+    "uvicorn",
+    "openai",
+    "python-dotenv"
+]
+
+[project.urls]
+Homepage = "https://huggingface.co/spaces/your-username/phishguard-env"

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Phishing Detection System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🛡️ AI Phishing Detection</h1>
+
+        <p class="subtitle">
+            Analyze suspicious emails and detect phishing attempts using AI-powered threat analysis.
+        </p>
+
+        <textarea
+            id="emailInput"
+            placeholder="Paste suspicious email content here..."></textarea>
+
+        <div class="button-container">
+            <button onclick="analyzeEmail()">
+                Analyze Email
+            </button>
+        </div>
+
+        <div class="result-card">
+            <h2>Analysis Result</h2>
+            <div id="scoreSection" style="display:none;">
+
+    <div class="score-header">
+        <span>Threat Score</span>
+        <span id="scoreValue">0%</span>
+    </div>
+
+    <div class="progress-bar">
+        <div id="progressFill"></div>
+    </div>
+
+    <div id="threatBadge" class="badge">
+        LOW
+    </div>
+
+</div>
+
+<pre id="result">Waiting for analysis...</pre>
+        </div>
+
+        <div class="footer">
+            Built with FastAPI • JavaScript • Cybersecurity
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

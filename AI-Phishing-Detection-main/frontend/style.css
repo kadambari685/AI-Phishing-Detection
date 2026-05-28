@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    min-height: 100vh;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 35px;
+    font-size: 1.1rem;
+}
+
+textarea {
+    width: 100%;
+    min-height: 220px;
+    background: #0f172a;
+    color: white;
+    border: 2px solid #334155;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 16px;
+    resize: vertical;
+    transition: 0.3s;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #38bdf8;
+    box-shadow: 0 0 12px rgba(56,189,248,0.4);
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background: linear-gradient(90deg, #0ea5e9, #2563eb);
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37,99,235,0.5);
+}
+
+.result-card {
+    margin-top: 35px;
+    background: #111827;
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid #334155;
+}
+
+.result-card h2 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+#result {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+/* ===== Progress Bar ===== */
+
+.score-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 16px;
+    background: #1e293b;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#progressFill {
+    height: 100%;
+    width: 0%;
+    border-radius: 20px;
+    transition: width 1s ease;
+}
+
+/* ===== Threat Badge ===== */
+
+.badge {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: pulse 2s infinite;
+}
+
+.low {
+    background: rgba(34,197,94,0.2);
+    color: #22c55e;
+    border: 1px solid #22c55e;
+}
+
+.medium {
+    background: rgba(245,158,11,0.2);
+    color: #f59e0b;
+    border: 1px solid #f59e0b;
+}
+
+.high {
+    background: rgba(239,68,68,0.2);
+    color: #ef4444;
+    border: 1px solid #ef4444;
+}
+
+/* ===== Animation ===== */
+
+@keyframes pulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.result-card {
+    animation: slideUp 0.7s ease;
+}
+
+@keyframes slideUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
