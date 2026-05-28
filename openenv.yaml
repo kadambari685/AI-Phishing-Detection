@@ -1,0 +1,8 @@
+name: "PhishGuard-Env"
+version: "1.0.0"
+description: "Phishing triage simulation for SOC Analysts."
+task_ids:
+  - "lv1_to_lv10"
+tags:
+  - "cybersecurity"
+  - "openenv"
