@@ -1,6 +1,8 @@
 venv/
 Lib/
 Scripts/
-__pycache__/
-.env
+**pycache**/
 *.pyc
+.env
+.vscode/
+
